@@ -13,7 +13,10 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">главная</li>
+          <li>
+            <a href="#" class="header__links-list-item_no-bullit">главная</a>
+          </li>
+
           <li>
             <a href="#">посмотреть лоты</a>
           </li>
@@ -37,10 +40,9 @@
     </header>
     <main class="main">
       <section class="cover">
-        <img src="images/cover.jpg" class="cover_image" alt="обложка" />
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text">Оно</span>
+          <span class="aligned-text_left">Оно</span>
           <span class="aligned-text_center">тебе</span>
           <span class="aligned-text_right">надо</span>
         </h1>
@@ -48,68 +50,53 @@
           <h2 class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </h2>
-          <button class="bet-button">Сделать ставку</button>
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">ЛОТЫ</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item">
-            <div class="card">
+          <li class="lots__card-list-item card_type_film">
+            <article class="card">
               <a href="#" class="card__title"
                 >Фильм режиссёра, который бросил киношколу</a
               >
-              <article class="card__text">
+              <div class="card__text">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </article>
-            </div>
-            <img
-              src="/images/card-lot-01.jpg"
-              class="card_type_film"
-              alt="Первая карточка"
-            />
+              </div>
+            </article>
             <div class="overlay"></div>
           </li>
-          <li class="lots__card-list-item">
-            <div class="card">
+          <li class="lots__card-list-item card_type_book">
+            <article class="card">
               <a href="#" class="card__title"
                 >Книга, где описан один скучный день из жизни рекламного
                 агента</a
               >
-              <article class="card__text">
+              <div class="card__text">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно
                 рассказывается о 16 июня 1904 года и об истории литературы,
                 начиная с античных времён. И это всё накладывается на эпическую
                 поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                 Джойса?
-              </article>
-            </div>
-            <img
-              src="images/card-lot-02.jpg"
-              class="card_type_book"
-              alt="Вторая карточка"
-            />
+              </div>
+            </article>
             <div class="overlay"></div>
           </li>
-          <li class="lots__card-list-item">
-            <div class="card">
+          <li class="lots__card-list-item card_type_picture">
+            <article class="card">
               <a href="#" class="card__title"
                 >Картина, которую повторит даже 5-летний сын маминой подруги</a
               >
-              <article class="card__text">
+              <div class="card__text">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
                 что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                 котиков... Сколько бы вы на такое поставили, если бы не знали,
                 что это — одна из революционных работ Кандинского?
-              </article>
-            </div>
-            <img
-              src="images/card-lot-03.jpg"
-              class="card_type_picture"
-              alt="Третья карточка"
-            />
+              </div>
+            </article>
             <div class="overlay"></div>
           </li>
         </ul>
@@ -154,17 +141,21 @@
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
-      <ul class="footer__menu">
-        <li class="footer__menu-list-item">
-          <a href="#" class="footer__menu-link_active">главная</a>
-        </li>
-        <li class="footer__menu-list-item">
-          <a href="#" class="footer__menu-link">посмотреть лоты</a>
-        </li>
-        <li class="footer__menu-list-item">
-          <a href="#" class="footer__menu-link">об аукционе</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="footer__menu">
+          <li class="footer__menu-list-item">
+            <a href="#" class="footer__menu-link footer__menu-link_active"
+              >главная</a
+            >
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#" class="footer__menu-link">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#" class="footer__menu-link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#" class="footer__social-link">
