@@ -43,7 +43,7 @@
 }
 
 .cover {
-  height: 757px;
+  padding-bottom: 50px;
   position: relative;
   background-image: url("../images/cover.jpg");
   background-size: cover;
@@ -56,6 +56,7 @@
   opacity: 60%;
   inset: 0;
   position: absolute;
+  pointer-events: none;
 }
 
 .cover__title {
@@ -165,6 +166,12 @@
   object-fit: cover;
 }
 
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
 .card {
   width: 254px;
   min-height: 500px;
@@ -181,6 +188,8 @@
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff;
   z-index: 1;
 }
 
