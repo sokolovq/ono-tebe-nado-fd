@@ -230,7 +230,7 @@ li:first-child {
 
 .about {
   width: 1052px;
-  margin: 120px 24px 180px;
+  margin: 125px 24px 180px;
   display: grid;
   grid-template-columns: 334px auto;
 }
