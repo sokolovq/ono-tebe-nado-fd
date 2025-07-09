@@ -16,7 +16,7 @@
   list-style: circle;
 }
 
-.header__links-list li:first-child {
+li:first-child {
   list-style-type: none;
 }
 
